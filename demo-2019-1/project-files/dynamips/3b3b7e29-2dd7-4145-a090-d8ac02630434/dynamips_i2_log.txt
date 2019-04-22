@@ -1,0 +1,44 @@
+Apr 21 19:44:11.004 HYPERVISOR: Release 0.2.20-amd64/Linux (tag 2019022012)
+Apr 21 19:44:11.004 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 47985.
+Apr 21 19:44:11.013 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 21 19:44:11.013 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jose/GNS3/projects/demo-2019-1/project-files/dynamips 
+Apr 21 19:44:11.013 GENERAL: working_dir=/home/jose/GNS3/projects/demo-2019-1/project-files/dynamips
+Apr 21 19:44:11.014 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jose/GNS3/projects/demo-2019-1/project-files/dynamips/3b3b7e29-2dd7-4145-a090-d8ac02630434 
+Apr 21 19:44:11.014 GENERAL: working_dir=/home/jose/GNS3/projects/demo-2019-1/project-files/dynamips/3b3b7e29-2dd7-4145-a090-d8ac02630434
+Apr 21 19:44:11.014 HYPERVISOR: exec_cmd: vm create R2 2 c3725 
+Apr 21 19:44:11.014 VM: VM R2 created.
+Apr 21 19:44:11.015 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Apr 21 19:44:11.016 HYPERVISOR: exec_cmd: c3725 get_mac_addr R2 
+Apr 21 19:44:11.017 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Apr 21 19:44:11.018 HYPERVISOR: exec_cmd: vm set_ios R2 /home/jose/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Apr 21 19:44:11.019 HYPERVISOR: exec_cmd: c3725 set_mac_addr R2 c202.6df4.0000 
+Apr 21 19:44:11.020 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Apr 21 19:45:26.287 HYPERVISOR: exec_cmd: nio create_udp udp-733240af-e036-4484-9b32-6a3eb31c4031 10012 127.0.0.1 10013 
+Apr 21 19:45:26.541 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-733240af-e036-4484-9b32-6a3eb31c4031 
+Apr 21 19:45:26.542 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 21 19:46:16.105 HYPERVISOR: exec_cmd: vm set_ios R2 /home/jose/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Apr 21 20:35:24.835 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Apr 21 20:35:24.838 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/jose/GNS3/projects/demo-2019-1/project-files/dynamips/c3725-adventerprisek9-mz124-15.image-128.ghost 
+Apr 21 20:35:24.841 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 21 20:35:24.845 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Apr 21 20:35:24.846 HYPERVISOR: exec_cmd: vm start R2 
+Apr 21 20:35:55.103 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 21 20:35:55.180 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 21 20:46:55.237 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 21 20:46:55.262 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 21 20:46:59.168 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 21 20:46:59.174 HYPERVISOR: exec_cmd: vm suspend R2 
+Apr 21 20:47:00.960 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Apr 21 20:47:00.961 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/jose/GNS3/projects/demo-2019-1/project-files/dynamips/c3725-adventerprisek9-mz124-15.image-128.ghost 
+Apr 21 20:47:00.963 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 21 20:47:00.972 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 21 20:47:00.978 HYPERVISOR: exec_cmd: vm resume R2 
+Apr 21 20:47:38.212 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 21 20:47:38.212 HYPERVISOR: exec_cmd: vm stop R2 
+Apr 21 20:47:38.301 VM: VM R2 shutdown.
+Apr 21 20:47:38.302 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 21 20:47:38.304 HYPERVISOR: exec_cmd: vm delete R2 
+Apr 21 20:47:38.304 VM: VM R2 destroyed.
+Apr 21 20:47:38.305 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 21 20:47:38.641 HYPERVISOR: Stopped.
+Apr 21 20:47:38.641 GENERAL: reset done.
